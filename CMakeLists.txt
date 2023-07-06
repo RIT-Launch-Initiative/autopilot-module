@@ -37,5 +37,5 @@ include_directories(extern/launch-core)
 
 add_definitions(-DDEBUG)
 
-file(GLOB_RECURSE SOURCES "Src/*.*" "extern/launch-core/device/Device.cpp" "extern/launch-core/sched/sched.cpp")
+file(GLOB_RECURSE SOURCES "Src/main.cpp" "extern/launch-core/device/Device.cpp" "extern/launch-core/sched/sched.cpp")
 add_executable(autopilot-module ${SOURCES})
